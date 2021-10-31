@@ -4,6 +4,6 @@ require_once 'Vehicle.php';
 
 interface LightableInterface
 {
-    public function switchOn(bool $switchOn): bool;
-    public function switchOff(bool $switchOff): bool;
+    public function switchOn(): bool;
+    public function switchOff(): bool;
 }

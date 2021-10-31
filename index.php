@@ -9,6 +9,7 @@ require_once 'Car.php';
 require_once 'Bicycle.php';
 require_once 'Truck.php';
 require_once 'Skateboard.php';
+require_once 'LightableInterface.php';
 
 $motorWay = new MotorWay;
 $pedestrianWay = new PedestrianWay;
@@ -56,3 +57,4 @@ try {
 } finally {
     echo "Ma voiture roule comme un donut";
 }
+var_dump($bicycle->switchOn());

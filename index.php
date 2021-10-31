@@ -43,3 +43,16 @@ $residentialWay->addVehicle($car);
 $residentialWay->addVehicle($skateboard);
 $residentialWay->addVehicle($truck);
 var_dump($residentialWay->getCurrentVehicles());
+
+echo "frein à main :";
+var_dump($car->getHasParkBrake());
+$car->setParkBrake(true);
+var_dump($car->getHasParkBrake());
+
+try {
+    $car->start();
+} catch (Exception $e) {
+    echo "Exception received :  " . $e . "n";
+} finally {
+    echo "Ma voiture roule comme un donut";
+}
